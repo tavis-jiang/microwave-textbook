@@ -36,7 +36,7 @@
  $('#font-toggle').addEventListener('click',()=>{const sizes=['normal','large','larger'],current=document.documentElement.dataset.font||'normal';const font=sizes[(sizes.indexOf(current)+1)%3];document.documentElement.dataset.font=font;try{localStorage.setItem('microwave-font',font);}catch{}$('#font-toggle').textContent={normal:'字号',large:'字号 · 大',larger:'字号 · 更大'}[font];});
  if(kind==='home'){
   const recent=get('microwave-recent');
-  if(recent&&/^(?:\d{2}|A|answers-(?:\d{2}|A))$/.test(recent.page)){
+  if(recent&&/^(?:\d{2}|[ABC]|answers-(?:\d{2}|[ABC])|mock-01-answers)$/.test(recent.page)){
    const a=$('#continue-reading');a.href=recent.page+'.html?resume=1';a.textContent='继续上次阅读 ↗';$('#resume-note').hidden=false;$('#resume-note').textContent=recent.title;
   }
  }

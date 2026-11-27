@@ -1,0 +1,47 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d5e56"><title>阶段01_04记录 · 微波技术</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="vendor/katex.min.css"><link rel="stylesheet" href="style.css"><script src="settings.js"></script><script defer src="search-index.js"></script><script defer src="app.js"></script></head><body data-page="stage-01_04" data-kind="reference"><a class="skip-link" href="#main">跳到正文</a><div class="reading-progress" aria-hidden="true"></div><aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">∿</span><span>微波技术<small>自学教材 · EST3303</small></span></a><button class="search-trigger" type="button"><span>搜索教材</span><kbd>/</kbd></button><nav aria-label="教材目录"><a class="nav-home " href="index.html">阅读首页</a><p class="nav-caption">完整教材</p><a class="chapter-link "  href="01.html"><span class="chapter-number">01</span><span>电路量与传播时间</span></a><a class="chapter-link "  href="02.html"><span class="chapter-number">02</span><span>复数相量与电磁波基础</span></a><a class="chapter-link "  href="03.html"><span class="chapter-number">03</span><span>传输线的前进波与反射</span></a><a class="chapter-link "  href="04.html"><span class="chapter-number">04</span><span>传输线的暂态与应用</span></a><a class="chapter-link "  href="05.html"><span class="chapter-number">05</span><span>导行波与波导</span></a><a class="chapter-link "  href="06.html"><span class="chapter-number">06</span><span>微波网络与S参数</span></a><a class="chapter-link "  href="07.html"><span class="chapter-number">07</span><span>阻抗匹配与调谐</span></a><a class="chapter-link "  href="08.html"><span class="chapter-number">08</span><span>微波谐振器</span></a><a class="chapter-link "  href="09.html"><span class="chapter-number">09</span><span>功率分配与定向耦合</span></a><a class="chapter-link "  href="10.html"><span class="chapter-number">10</span><span>微波滤波与互连专题</span></a><a class="chapter-link "  href="11.html"><span class="chapter-number">11</span><span>开卷计算与教材查阅</span></a><a class="chapter-link "  href="A.html"><span class="chapter-number">A</span><span>本班作业专题</span></a><a class="chapter-link "  href="B.html"><span class="chapter-number">B</span><span>第四章作业与网络训练</span></a><a class="chapter-link "  href="C.html"><span class="chapter-number">C</span><span>扩展体系与设计边界</span></a><p class="nav-caption">整卷训练</p><a class="utility" href="original-exam.html">原卷逐题详解</a><a class="utility" href="mock-01.html">原创模拟卷01</a><a class="utility" href="mock-01-answers.html">模拟卷独立解析</a><p class="nav-caption">随时查阅</p><a class="utility " href="formulas.html">符号与公式</a><a class="utility " href="sources.html">考点与资料</a><a class="utility " href="about.html">教材说明</a></nav><p class="sidebar-note">资料范围 · 2026.11.27<br>原书对照未完成 · 见来源说明</p></aside><button class="nav-scrim" aria-label="关闭目录" hidden></button><div class="page"><header class="toolbar"><button id="menu-toggle" class="button mobile-menu" aria-label="展开教材目录" aria-expanded="false" aria-controls="sidebar">☰ 目录</button><a class="breadcrumb" href="index.html">微波技术<span>/</span>参考资料</a><div class="reader-controls"><button class="button" id="font-toggle" aria-label="调整字号">字号</button><button class="button" id="theme-toggle" aria-label="切换深色模式">深色</button><button class="button" id="search-top" aria-label="搜索教材">搜索</button></div></header><div class="reading-layout "><main id="main" tabindex="-1"><article class="prose"><h1 id="section-1">2026-11-27 第01–04章阶段记录</h1>
+<p>本记录是恢复所需事实；完整要求仍以根目录《教材重写总提示词.md》为准。当前仅补写前四章，不宣称全书完成。</p>
+<h2 id="section-2">已阅读与定位</h2>
+<p>正文01–06本轮已完整读取；07–11和附录A尚未本轮全读。正式来源85/292页已视觉读图，详见课件逐页覆盖.csv。已读：简介1–2、第一章11页、第二章28页、补充1共26页、时域作图文章4页、HSPICE9页、第四章作业5页。未读行保持待原页核对。292页分116单元是施工表，未细化部分仍写缺口。</p>
+<p>原页PNG在../../资料/重审20261127/原页/。第二章/补充1/时域作图/HSPICE有组图；单页保留供放大。原卷2页、答卷5页在../../资料/重审20261127/原卷-1.png等；第2卷页空白。标题2022–2023第1学期《微波与天线》，未列教师；学生答案非官方。</p>
+<h2 id="section-3">原卷精确题意（后续仍应对照原图）</h2>
+<ol>
+<li>S=[[0,-j],[-j,0]]，R0=50Ω；判断互易、对称、无耗；端口2短路的输入Γ；端口2开路的输入阻抗；100Ω负载SWR；两网络级联。无耗应S†S=I，不是学生笔记疑似写的0。</li>
+<li>空气矩形波导a=8cm、b=6cm，求主模、截止频率、1.6fc时所有传播模、短路封闭后谐振腔最短长度。最短腔需比较全部允许模，不能仅先假设TE101。</li>
+<li>ab:Zc4=50Ω、λg/4；bc:100Ω、λg/3，终端Z1=100Ω；bd:200Ω、λg/4短路；be:150Ω、λg/2开路。判各支路波状态。Ug=10∠0 V、Zg=25Ω，求Z1和Zg功率。原卷未写峰值/有效值，学生1W采用有效值，教材峰值应0.5W，须给两种约定。</li>
+<li>并联短路支节，Z0=50Ω，ZL=42.5−j33.75Ω，λg=100mm；最小正长度的两组配对d、l；源置零反向看入阻抗ZL*的解释。原卷末句Fig.1标号与描述不合，应看Fig.2支节图。</li>
+<li>开路线整波长谐振，γ=α+jβ，Z0；判谐振，画并联RLC，推R/L/C。必须说明低损耗、近谐振、无色散；可加β'一般化变式。</li>
+<li>Wilkinson S=[[0,-j/√2,-j/√2],[-j/√2,0,0],[-j/√2,0,0]]，R0=50Ω；端口2/3同相各0.5W，输出1W；同相4.5W、2W，输出6.25W、隔离电阻耗散0.25W。需推合成相位与幅度变式。</li>
+</ol>
+<p>全卷26+18+18+14+14+10=100，无选择判断。原卷逐小题对应.md仍是初版施工表，位置可能需改：Q3旧例实际在11章，不能沿用未经核对的03.6定位。</p>
+<h2 id="section-4">新第四章作业（14463927，5页，均已看图）</h2>
+<p>p1 4.10：并联π的Y矩阵相加；桥T（对称串臂Z1、中间接地Z2、输入输出桥Z3）；串联T的Z相加。
+p2 4.11：串联Z/并联Z的S，证明串联S12=1−S11，并联S12=1+S11。
+p3 4.12：级联S21=A21B21/(1−A22B11)。
+p4 4.14：四端口矩阵行依次
+[.178∠90,.6∠45,.4∠45,0]；[.6∠45,0,0,.3∠−45]；[.4∠45,0,0,.5∠−45]；[0,.3∠−45,.5∠−45,0]。
+(a)无耗(b)互易(c)其余匹配的端口1回波损耗(d)2到4插损/相延(e)端口3短路其余匹配的端口1Γ。
+p5 4.18：矩阵行依次
+[.2∠50,0,0,.4∠−45]；[0,.6∠45,.7∠−45,0]；[0,.7∠−45,.6∠45,0]；[.4∠−45,0,0,.5∠45]。
+端口3/4以45°无耗匹配线相连，求1到2插损/相延。未标作业分值，不编造。</p>
+<h2 id="section-5">正文实质变化与证据</h2>
+<p>01新增01.5A/B，频段重叠、边沿频谱拐点不等于带限、带宽、cos²平均、dB条件与反算；例9–12，练6–8。
+02重写02.5/6：向量、偏导/散旋度、积分四方程及连续性、波方程消元、传播H方向、Poynting、边界小柱/小环、法向D、PEC、垂直入射反射与能量；例11–17及旧例8–10扩写，练7–11。
+03新增03.6A/B/C：cos/sin变换、反算负载、源反馈和最大功率证明、低损耗展开、无畸变精确分解、复Z0交叉功率项；例11–17，练8–12。
+04新增04.6A–E：任意位置到达、有限脉冲叠加、非线性Bergeron、串联L与终端L区别、串RC、几何时延/LC离散色散、HSPICE材料/几何/RLGC字段与未运行网表；例10–19，练7–11。软件读模练11已移至练习区。
+解析在习题解析/01–04_解析.md独立补写，仍需最终逐题教学审查，不能只看公式是否能渲染。</p>
+<p>assets新增02_传播与边界.svg、03_驻波包络.svg、04_反射图.svg、04_Bergeron.svg。后三图用make_figures.py生成且已查看；02图已查看修字体（Et/Ht代替缺字下标）。matplotlib仅装在本目录.venv，不能公开上传虚拟环境。</p>
+<p>verify_rewrite.py输出89项新增检查；旧核验/verify.py本轮107项通过。核验/audit_book.py新增排除重审核验和.venv，避免扫描第三方readme。当前265本地链接、1587公式无报错。只移动04-11位置不影响数值；阶段记录/交接新增链接如有需后续统一链接检查。</p>
+<h2 id="section-6">后续内容任务</h2>
+<p>05：先读第三章58页、作业4页、TXLINE15页、HFSS5页和相关补充页；补横纵场推导、分离变量、TEM存在条件、平板TE/TM功率、Bessel根和圆模、同轴高模、带状线/微带几何与损耗、群速色散、其它波导结构/功率容量。实际图示与材料变式不能省。
+06：完整ZY/ABCD由定义推导，实/复参考阻抗功率波、模态电压流、频率共轭对称、流图、TRL校准方程、不连续补偿/模式匹配；新增作业逐题详解建议附录B，配练习解析。
+07：真实Smith图操作，支节两组配对、反向共轭证明、匹配变化条件。
+08：近谐振RLC一般与无色散形式、腔模最短长度完整比较。
+09：奇偶模实际图与耦合器完整推导。
+10：新串扰41页必须原页读，矩阵符号/偶奇模、NEXT/FEXT、π/T终接、非理想互连23页、滤波。
+11或独立卷册：已购原卷每小题完整详解，不能只散落引用旧例；至少一套原创综合模拟卷和独立详解；从原卷每一步反查先修/推导/算例/训练。
+知识单元表还要补正式课程范围中的匹配/谐振/耦合/滤波等单元，不能只把现有292页当全部考核范围。随每章修改build_coverage.py的持久映射，避免重生成覆盖手工更正。</p>
+<h2 id="section-7">资料与网站限制</h2>
+<p>Pozar指定4版正文未得；Wiley官网产品/样章403/404，配套教师资源受限。其他大学PDF未核实授权不冒称合法书源。学校/出版社合法渠道可继续查，不能用知识记忆冒充原书阅读。
+Canvas模块已全部展开，19文件，无额外书源；pages仍失败，公告/作业空不证明全站无内容。来源与缺口.md记录原页疑误和处理。
+GitHub网站仍旧版本，main HEAD84c06a87b1cf5ae9d854281e944b1af123398b4b，2026-11-27检查工作树干净。最终才重建同步，需build.cjs登记新增页并去旧固定统计；不上传原PDF/PPT/原卷和本目录.venv。旧网站/为Sites，403不再部署。</p>
+</article><footer class="page-footer">微波技术自学教材 · EST3303-02 · 唐旻<br>先跟随推导，再独立作答；练习解析按题号单独查阅。<a href="sources.html">查看资料依据</a></footer></main><aside class="toc" aria-label="本页目录"><p>本页目录</p><nav><a href="#section-2">已阅读与定位</a><a href="#section-3">原卷精确题意（后续仍应对照原图）</a><a href="#section-4">新第四章作业（14463927，5页，均已看图）</a><a href="#section-5">正文实质变化与证据</a><a href="#section-6">后续内容任务</a><a href="#section-7">资料与网站限制</a></nav><a class="back-top" href="#main">回到顶部 ↑</a></aside></div></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="search-heading"><h2 id="search-title">搜索全书</h2><button class="button" id="search-close" aria-label="关闭搜索">关闭 · Esc</button></div><label class="sr-only" for="search-input">输入关键词或题号</label><input id="search-input" type="search" autocomplete="off" placeholder="试试：反射系数、Smith、07-3"><p id="search-status" aria-live="polite">搜索正文、例题和独立解析。</p><div id="search-results"></div></dialog></body></html>

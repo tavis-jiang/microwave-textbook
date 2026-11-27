@@ -1,11 +1,11 @@
 {
   "id": "microwave-textbook-reader",
-  "builtAt": "2026-11-27T03:09:27.866Z",
-  "pages": 29,
-  "formulas": 1294,
-  "images": 1,
-  "questionAnchors": 0,
-  "resources": 1,
+  "builtAt": "2026-11-27T10:03:47.799Z",
+  "pages": 44,
+  "formulas": 2819,
+  "images": 16,
+  "questionAnchors": 196,
+  "resources": 17,
   "chapters": [
     {
       "slug": "01",
@@ -54,6 +54,14 @@
     {
       "slug": "A",
       "title": "本班作业专题"
+    },
+    {
+      "slug": "B",
+      "title": "第四章作业与网络训练"
+    },
+    {
+      "slug": "C",
+      "title": "扩展体系与设计边界"
     }
   ]
 }

@@ -1,0 +1,128 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d5e56"><title>综合模拟卷01 · 微波技术</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="vendor/katex.min.css"><link rel="stylesheet" href="style.css"><script src="settings.js"></script><script defer src="search-index.js"></script><script defer src="app.js"></script></head><body data-page="mock-01" data-kind="reference"><a class="skip-link" href="#main">跳到正文</a><div class="reading-progress" aria-hidden="true"></div><aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">∿</span><span>微波技术<small>自学教材 · EST3303</small></span></a><button class="search-trigger" type="button"><span>搜索教材</span><kbd>/</kbd></button><nav aria-label="教材目录"><a class="nav-home " href="index.html">阅读首页</a><p class="nav-caption">完整教材</p><a class="chapter-link "  href="01.html"><span class="chapter-number">01</span><span>电路量与传播时间</span></a><a class="chapter-link "  href="02.html"><span class="chapter-number">02</span><span>复数相量与电磁波基础</span></a><a class="chapter-link "  href="03.html"><span class="chapter-number">03</span><span>传输线的前进波与反射</span></a><a class="chapter-link "  href="04.html"><span class="chapter-number">04</span><span>传输线的暂态与应用</span></a><a class="chapter-link "  href="05.html"><span class="chapter-number">05</span><span>导行波与波导</span></a><a class="chapter-link "  href="06.html"><span class="chapter-number">06</span><span>微波网络与S参数</span></a><a class="chapter-link "  href="07.html"><span class="chapter-number">07</span><span>阻抗匹配与调谐</span></a><a class="chapter-link "  href="08.html"><span class="chapter-number">08</span><span>微波谐振器</span></a><a class="chapter-link "  href="09.html"><span class="chapter-number">09</span><span>功率分配与定向耦合</span></a><a class="chapter-link "  href="10.html"><span class="chapter-number">10</span><span>微波滤波与互连专题</span></a><a class="chapter-link "  href="11.html"><span class="chapter-number">11</span><span>开卷计算与教材查阅</span></a><a class="chapter-link "  href="A.html"><span class="chapter-number">A</span><span>本班作业专题</span></a><a class="chapter-link "  href="B.html"><span class="chapter-number">B</span><span>第四章作业与网络训练</span></a><a class="chapter-link "  href="C.html"><span class="chapter-number">C</span><span>扩展体系与设计边界</span></a><p class="nav-caption">整卷训练</p><a class="utility" href="original-exam.html">原卷逐题详解</a><a class="utility" href="mock-01.html">原创模拟卷01</a><a class="utility" href="mock-01-answers.html">模拟卷独立解析</a><p class="nav-caption">随时查阅</p><a class="utility " href="formulas.html">符号与公式</a><a class="utility " href="sources.html">考点与资料</a><a class="utility " href="about.html">教材说明</a></nav><p class="sidebar-note">资料范围 · 2026.11.27<br>原书对照未完成 · 见来源说明</p></aside><button class="nav-scrim" aria-label="关闭目录" hidden></button><div class="page"><header class="toolbar"><button id="menu-toggle" class="button mobile-menu" aria-label="展开教材目录" aria-expanded="false" aria-controls="sidebar">☰ 目录</button><a class="breadcrumb" href="index.html">微波技术<span>/</span>参考资料</a><div class="reader-controls"><button class="button" id="font-toggle" aria-label="调整字号">字号</button><button class="button" id="theme-toggle" aria-label="切换深色模式">深色</button><button class="button" id="search-top" aria-label="搜索教材">搜索</button></div></header><div class="reading-layout "><main id="main" tabindex="-1"><article class="prose"><h1 id="section-1">原创综合模拟卷01</h1>
+<p><a href="about.html">目录</a> · <a href="mock-01-answers.html">独立完整解析</a> · <a href="original-exam.html">原卷逐题详解</a></p>
+<p>这是原创训练卷，<strong>不是本届预测卷</strong>。8大题、100分、建议120分钟均为训练用设定；原卷只用于确认多问计算形式，没有据此断言本届时长或题数。建议先独立建模、算完后核对解析；本卷不记录虚构成绩。各题分值是编者练习分配，非官方评分细则。</p>
+<p>约定：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>j</mi><mi>ω</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">e^{j\omega t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8247em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mord mathnormal mtight" style="margin-right:0.0359em;">ω</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span>、正向波沿+z、端口电流入网络、相量为峰值、功率波模平方为W；题目中的阶跃为瞬时电压。c=3.00×10⁸ m/s，空气波阻抗取377 Ω。除明确有耗者外均理想无耗；不同题的参数相互独立。每个结论须给公式、条件、单位及至少一种检查。</p>
+<p><a id="m1"></a></p>
+<h2 id="section-2">一、相量、传播和边界（10分）</h2>
+<p>空气中平面波 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">E</mi><mo stretchy="false">(</mo><mi>z</mi><mo separator="true">,</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><mi>π</mi><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup><mi>t</mi><mo>−</mo><mi>β</mi><mi>z</mi><mo stretchy="false">)</mo><mover accent="true"><mi mathvariant="bold">x</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\mathbf E(z,t)=20\cos(2\pi\times10^9t-\beta z)\hat{\mathbf x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbf">E</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">cos</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="mclose">)</span><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7079em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathbf">x</span></span><span style="top:-3.0134em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span></span></span></span> V/m。</p>
+<ol>
+<li>写电场相量、β、波长和磁场相量，说明方向。（3分）</li>
+<li>求平均功率密度；沿+z走5 cm后相位变化多少？（3分）</li>
+<li>波垂直入射到εr=4、μr=1的无耗介质，界面为z=0。求电场反射/透射系数、反射/透射功率比，并检查边界与守恒。（4分）</li>
+</ol>
+<p><a id="m2"></a></p>
+<h2 id="section-3">二、同一条线的时域、频域和有耗变式（16分）</h2>
+<p>50 Ω线，v=2×10⁸ m/s、长0.2 m，负载100 Ω。源内阻25 Ω。</p>
+<ol>
+<li>初始无储能，源开路电压在t=0从0跳到3 V。求初发波、两端反射系数和单程时延。（3分）</li>
+<li>求负载在首次、第二次、第三次回波到达后的累计电压及发生时刻；用直流稳态检查收敛值。（5分）</li>
+<li>改用250 MHz、峰值开路3 V的正弦源，求输入阻抗、源电流、负载功率，并解释与第2问不能直接混用。（4分）</li>
+<li>另将源改为匹配50 Ω、给定输入正向功率20 mW，线单程功率因子q=0.8，仍接100 Ω。按实Z₀弱损耗模型求负载、输入净功率和线损。（4分）</li>
+</ol>
+<p><a id="m3"></a></p>
+<h2 id="section-4">三、介质波导、全部模式与传播量（12分）</h2>
+<p>均匀εr=2.25、μr=1填充的矩形PEC波导a=40 mm、b=20 mm，f=6 GHz。</p>
+<ol>
+<li>求主模及其截止频率。（2分）</li>
+<li>列出所有传播TE/TM模式，给出足以排除更高指标的理由。（5分）</li>
+<li>对TE10求λg、vp、vg，检验vpvg；说明vp大于介质中的平面波速度是否说明信息超速。（5分）</li>
+</ol>
+<p><a id="m4"></a></p>
+<h2 id="section-5">四、含耗散二端口、反馈和参考面（12分）</h2>
+<p>实参考50 Ω，网络 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.2</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>j</mi><mn>0.4</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>j</mi><mn>0.4</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.2</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">S=\begin{bmatrix}0.2&amp;j0.4\\j0.4&amp;0.2\end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0.2</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mord">0.4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mord">0.4</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0.2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span>。</p>
+<ol>
+<li>判断互易、对称、无耗，须用矩阵而不只看名称。（3分）</li>
+<li>端口2接ΓL=0.5，端口1入射1 W、源匹配，求输入Γ、负载吸收、反射及内部耗散。（5分）</li>
+<li>端口1参考面向外移一段50 Ω无耗线λ/8，端口2不动，求新输入Γ。再将两个原网络直接级联，求S21与S11。（4分）</li>
+</ol>
+<p><a id="m5"></a></p>
+<h2 id="section-6">五、匹配两解和共轭方向（12分）</h2>
+<p>源50 Ω，ZL=100+j50 Ω；主线与并联短路支节均50 Ω，λg=80 mm。</p>
+<ol>
+<li>求0≤d&lt;λg/2、0&lt;l&lt;λg/2内全部配对解，并选本题两个长度均较短的一组。（7分）</li>
+<li>将源置零，从负载端向源看回，直接复算短组的等效阻抗。（3分）</li>
+<li>若该短组改用开路支节且d不变，最短正l是多少？（2分）</li>
+</ol>
+<p><a id="m6"></a></p>
+<h2 id="section-7">六、半波开路线、局部等效和加载（10分）</h2>
+<p>Z₀=75 Ω的低损耗无色散线，v=2×10⁸ m/s，α=0.2 Np/m。设计开路半波长并联谐振器f₀=2 GHz。</p>
+<ol>
+<li>求物理长度，推导局部R、L、C，不能直接抄整波长系数。（6分）</li>
+<li>求无载Q₀；若单端口外Qe=Q₀，求加载QL和近似半功率带宽。说明低损耗/窄带条件。（4分）</li>
+</ol>
+<p><a id="m7"></a></p>
+<h2 id="section-8">七、功率合成、相位和定向采样（10分）</h2>
+<p>理想等分Wilkinson反向使用，输入端口2、3分别1 W、4 W，相位差60°，和端匹配。和端输出接理想匹配20 dB定向耦合器，其他端口匹配。</p>
+<ol>
+<li>求和端输出、隔离电阻功率。（4分）</li>
+<li>求耦合器耦合端、直通端输出功率，检查整个系统能量。（3分）</li>
+<li>保持1 W、4 W，改变相位差，能否使和端输出为零？求最小输出及对应相位。（3分）</li>
+</ol>
+<p><a id="m8"></a></p>
+<h2 id="section-9">八、滤波与高速互连的条件选择（18分）</h2>
+<p>以下A、B是两项独立设计，参数不交叉使用。</p>
+<p>A：50 Ω等端接三阶Butterworth低通，fc=500 MHz，串L/并C/串L。</p>
+<ol>
+<li>求三个元件，在1 GHz算理想透射功率比；解释剩余功率在理想模型中的去向。（4分）</li>
+<li>若每个串L在fc处Q=50、并C在fc处Q=100，写此频点的三个有耗ABCD矩阵，说明怎样分开反射与内部耗散。（3分）</li>
+</ol>
+<p>B：对称耦合互连L=250 nH/m、M=25 nH/m、C=100 pF/m、Cm=10 pF/m，长0.04 m；激扰线上实际发出1 V线性上升沿，tr=0.1 ns。</p>
+<ol start="3">
+<li>写电容矩阵，求Ze、Zo和模态延时，解释直接FEXT是否消失及适用条件。（4分）</li>
+<li>受扰近端开路、远端近似匹配。求NEXT近端平台和远端噪声的来源、峰值及到达时段；不能仅用直接FEXT公式。（4分）</li>
+<li>若需要两模式同时匹配，给π或T终接的参数公式并代入本题Ze、Zo。（3分）</li>
+</ol>
+<h2 id="section-10">覆盖说明</h2>
+<div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>主线能力</th>
+<th>本卷位置</th>
+<th>教材入口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>相量、功率、方向、边界</td>
+<td>一</td>
+<td>01–02</td>
+</tr>
+<tr>
+<td>稳态/暂态传输线、损耗</td>
+<td>二</td>
+<td>03–04、附录A</td>
+</tr>
+<tr>
+<td>介质波导、全模枚举、群速</td>
+<td>三</td>
+<td>05</td>
+</tr>
+<tr>
+<td>S性质、加载、级联、参考面</td>
+<td>四</td>
+<td>06</td>
+</tr>
+<tr>
+<td>支节与反向共轭</td>
+<td>五</td>
+<td>07</td>
+</tr>
+<tr>
+<td>局部谐振、Q与外耦合</td>
+<td>六</td>
+<td>08</td>
+</tr>
+<tr>
+<td>相干合成、耦合器</td>
+<td>七</td>
+<td>09</td>
+</tr>
+<tr>
+<td>滤波设计、损耗、串扰、终接</td>
+<td>八</td>
+<td>10</td>
+</tr>
+</tbody>
+</table></div>
+<p>本卷覆盖已确认课程主线主题，不宣称一套100分卷穷尽153个知识单元；Smith实操、平面线几何、TRL、模式匹配、分支线/环形混合器及软件读模等另由章后训练与附录覆盖。指定教材和后续细目未核实部分仍列缺口，不从本卷题量反推不考。</p>
+</article><footer class="page-footer">微波技术自学教材 · EST3303-02 · 唐旻<br>先跟随推导，再独立作答；练习解析按题号单独查阅。<a href="sources.html">查看资料依据</a></footer></main><aside class="toc" aria-label="本页目录"><p>本页目录</p><nav><a href="#section-2">一、相量、传播和边界（10分）</a><a href="#section-3">二、同一条线的时域、频域和有耗变式（16分）</a><a href="#section-4">三、介质波导、全部模式与传播量（12分）</a><a href="#section-5">四、含耗散二端口、反馈和参考面（12分）</a><a href="#section-6">五、匹配两解和共轭方向（12分）</a><a href="#section-7">六、半波开路线、局部等效和加载（10分）</a><a href="#section-8">七、功率合成、相位和定向采样（10分）</a><a href="#section-9">八、滤波与高速互连的条件选择（18分）</a><a href="#section-10">覆盖说明</a></nav><a class="back-top" href="#main">回到顶部 ↑</a></aside></div></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="search-heading"><h2 id="search-title">搜索全书</h2><button class="button" id="search-close" aria-label="关闭搜索">关闭 · Esc</button></div><label class="sr-only" for="search-input">输入关键词或题号</label><input id="search-input" type="search" autocomplete="off" placeholder="试试：反射系数、Smith、07-3"><p id="search-status" aria-live="polite">搜索正文、例题和独立解析。</p><div id="search-results"></div></dialog></body></html>

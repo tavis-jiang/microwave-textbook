@@ -1,0 +1,59 @@
+{
+  "id": "microwave-textbook-reader",
+  "builtAt": "2026-11-27T03:09:27.866Z",
+  "pages": 29,
+  "formulas": 1294,
+  "images": 1,
+  "questionAnchors": 0,
+  "resources": 1,
+  "chapters": [
+    {
+      "slug": "01",
+      "title": "电路量与传播时间"
+    },
+    {
+      "slug": "02",
+      "title": "复数相量与电磁波基础"
+    },
+    {
+      "slug": "03",
+      "title": "传输线的前进波与反射"
+    },
+    {
+      "slug": "04",
+      "title": "传输线的暂态与应用"
+    },
+    {
+      "slug": "05",
+      "title": "导行波与波导"
+    },
+    {
+      "slug": "06",
+      "title": "微波网络与S参数"
+    },
+    {
+      "slug": "07",
+      "title": "阻抗匹配与调谐"
+    },
+    {
+      "slug": "08",
+      "title": "微波谐振器"
+    },
+    {
+      "slug": "09",
+      "title": "功率分配与定向耦合"
+    },
+    {
+      "slug": "10",
+      "title": "微波滤波与互连专题"
+    },
+    {
+      "slug": "11",
+      "title": "开卷计算与教材查阅"
+    },
+    {
+      "slug": "A",
+      "title": "本班作业专题"
+    }
+  ]
+}

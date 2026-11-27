@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d5e56"><title>核验记录 · 微波技术</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="vendor/katex.min.css"><link rel="stylesheet" href="style.css"><script src="settings.js"></script><script defer src="search-index.js"></script><script defer src="app.js"></script></head><body data-page="verification" data-kind="reference"><a class="skip-link" href="#main">跳到正文</a><div class="reading-progress" aria-hidden="true"></div><aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">∿</span><span>微波技术<small>自学教材 · EST3303</small></span></a><button class="search-trigger" type="button"><span>搜索教材</span><kbd>/</kbd></button><nav aria-label="教材目录"><a class="nav-home " href="index.html">阅读首页</a><p class="nav-caption">完整教材</p><a class="chapter-link "  href="01.html"><span class="chapter-number">01</span><span>电路量与传播时间</span></a><a class="chapter-link "  href="02.html"><span class="chapter-number">02</span><span>复数相量与电磁波基础</span></a><a class="chapter-link "  href="03.html"><span class="chapter-number">03</span><span>传输线的前进波与反射</span></a><a class="chapter-link "  href="04.html"><span class="chapter-number">04</span><span>传输线的暂态与应用</span></a><a class="chapter-link "  href="05.html"><span class="chapter-number">05</span><span>导行波与波导</span></a><a class="chapter-link "  href="06.html"><span class="chapter-number">06</span><span>微波网络与S参数</span></a><a class="chapter-link "  href="07.html"><span class="chapter-number">07</span><span>阻抗匹配与调谐</span></a><a class="chapter-link "  href="08.html"><span class="chapter-number">08</span><span>微波谐振器</span></a><a class="chapter-link "  href="09.html"><span class="chapter-number">09</span><span>功率分配与定向耦合</span></a><a class="chapter-link "  href="10.html"><span class="chapter-number">10</span><span>微波滤波与互连专题</span></a><a class="chapter-link "  href="11.html"><span class="chapter-number">11</span><span>开卷计算与教材查阅</span></a><a class="chapter-link "  href="A.html"><span class="chapter-number">A</span><span>本班作业专题</span></a><p class="nav-caption">随时查阅</p><a class="utility " href="formulas.html">符号与公式</a><a class="utility " href="sources.html">考点与资料</a><a class="utility " href="about.html">教材说明</a></nav><p class="sidebar-note">资料范围 · 2026.11.24<br>已核验教材 · 在线阅读</p></aside><button class="nav-scrim" aria-label="关闭目录" hidden></button><div class="page"><header class="toolbar"><button id="menu-toggle" class="button mobile-menu" aria-label="展开教材目录" aria-expanded="false" aria-controls="sidebar">☰ 目录</button><a class="breadcrumb" href="index.html">微波技术<span>/</span>参考资料</a><div class="reader-controls"><button class="button" id="font-toggle" aria-label="调整字号">字号</button><button class="button" id="theme-toggle" aria-label="切换深色模式">深色</button><button class="button" id="search-top" aria-label="搜索教材">搜索</button></div></header><div class="reading-layout "><main id="main" tabindex="-1"><article class="prose"><h1 id="section-1">教材核验记录</h1>
+<p>范围日期：2026-11-24。只记录实际执行的检查。数值复算程序：<a href="references.html#ref-3db1981b71">verify.py</a>，结果：<a href="references.html#ref-d0cf191946">数值结果</a>。文字推导、题答条件由编写时逐项检查，不能用数值抽查代替一般证明。</p>
+<h2 id="section-2">来源检查</h2>
+<ul>
+<li>Canvas 文件列表刷新成功，17 项；第一至第四章及补充课件均有本地缓存。</li>
+<li>原 CLI 下载返回 HTML 却报成功；以文件头发现后，改用已有认证 API 返回的下载地址，所有新增 PPT/PDF 检查真实文件签名，原有有效缓存未覆盖。</li>
+<li>简介 PDF 第 2 页与旧 A 卷 PDF 第 1 页已渲染并视觉核对。卷头确为 2022–2023 秋《微波与天线》，原卷为双栏排版。</li>
+<li>第 1 周周四第 3 节 08:24–08:38 和第 10 周周二第 4 节 07:49 字幕已检查上下文；视频音频尚未重新回放，引用保留这一限制。</li>
+<li>宿主无可用模型设置或创建线程工具，CUA 明确禁止访问 Codex。用户要求 GPT-6 Astra / High 已记录，实际档位未验证。</li>
+</ul>
+<h2 id="section-3">第 01 章</h2>
+<p>正文与 5 道解析逐一核对；直流功率、正弦峰值功率、延时、电长度和允许长度共 5 项 Python 复算通过。单位和峰值/有效值条件已明确。全书链接需待各章生成后统一检查。</p>
+<h2 id="section-4">第 02 章</h2>
+<p>6 道练习逐一核对条件和解析；复数乘回、象限、RC/RL 两种功率算法及介质界面能量守恒通过数值检查。峰值相量、时间因子、单位、场的传播方向均已声明。场方程采用均匀无源无耗假设，未把这一公式推广至任意介质。</p>
+<h2 id="section-5">第 03 章</h2>
+<p>7 道题与解析逐一核对。独立用反射系数法检验输入阻抗的四分之一波长、半波长、匹配和短路线极限；功率由波功率和电阻耗散两种算法交叉核对。有耗线记录实参考阻抗/低损耗的使用限制；无耗驻波位置已核对正距离周期解。</p>
+<h2 id="section-6">第 04 章</h2>
+<p>6 道习题与解析核对；反射图逐事件增量与累计值、正负反射乘积两类几何收敛、直流分压、电容边界及分段延迟通过 Python 验证。源开短路极限已按边界复查。HSPICE 未安装运行，本书网表仅作物理模型教学，并明确标注未运行；不声称已验证仿真波形。</p>
+<h2 id="section-7">第 05 章</h2>
+<p>6 道习题与解析核对，矩形波导模式按允许下标独立枚举。旧 A 卷 8 cm × 6 cm 例在 3 GHz 仅 TE10/TE01 传播。Python 复算发现例 05-5 的手算根号有偏差，已修正 r=0.754615、λg=39.7554 mm、TE 阻抗 499.593 Ω 及相关速度和功率。修正后 30 项累计数值检查通过。波导截面边界、TE/TM 下标规则及功率方向已检查；图示为概念截面，正式资源展示在全书核验时抽查。</p>
+<h2 id="section-8">第 06 章</h2>
+<p>7 道练习解析核对。检查峰值相量下功率波的 √2 因子、完整 S†S=I 条件（包括交叉内积）、任意负载的反馈分母、网络内部耗散与负载耗散分离；旧卷开短路、100 Ω 负载、两段级联独立推导。不同/复参考阻抗不作越界使用。累计 41 项数值检查通过。</p>
+<h2 id="section-9">第 07 章</h2>
+<p>6 道题及解析核对；旧 A 卷并联短路支节的两组 d/ls 解逐一代回验证，总导纳均为 1。检查 λ/2 周期等价与正长度、负载侧逆向共轭阻抗、混搭解的失配反例、L 型元件值。Smith 网格使用解析映射生成，不从 OCR 读图。累计 48 项数值检查通过；图形视觉抽查在全书阶段完成。</p>
+<h2 id="section-10">第 08 章</h2>
+<p>6 道习题逐一核对。用精确 coth 输入阻抗检查低损耗等效误差，LC 共振与 Q 交叉核对，双端口外部加载相加、能量/振幅衰减的系数 2、旧卷腔长的模式比较均已检查。旧题等效 RLC 答案明确补足低损耗、近谐振、无色散条件。累计 54 项数值检查通过。</p>
+<h2 id="section-11">第 09 章</h2>
+<p>7 道习题逐一核对。旧卷两路同相合成分别得 1 W/0 W 与 6.25 W/0.25 W（输出/电阻），独立复算；相位变化和幅度不平衡检查总功率守恒。四端口耦合器完整 4×4 的 S†S=I 共 16 个元素检查通过；奇偶模阻抗乘积检查通过。累计 81 项数值检查通过。</p>
+<h2 id="section-12">第 10 章</h2>
+<p>7 道练习与解析核对。三阶串L/并C/串L实际 ABCD 级联与理论 Butterworth 响应在 Ω=0.1、0.5、1、2、3 五个频点一致；带通元件谐振乘积、群延迟和 dB 损耗预算复算通过。Chebyshev 1 dB 数值独立计算并把近似衰减修正为 22.455955 dB。未作实物滤波器、HFSS 或 HSPICE 性能验证。累计 89 项数值检查通过。</p>
+<h2 id="section-13">第 11 章</h2>
+<p>旧卷第 3 题原图支路和长度视觉核对，解答按峰值约定独立计算。4 道原创综合题共 20 个分问逐一检查，最后一道滤波器/变换器在 2 GHz 的失配终接用 ABCD 源方程和加载 S 两种路径算得 0.1750547 mW，一致。源可用功率与源实际供给功率已分开。累计 96 项数值检查通过。</p>
+<h2 id="section-14">附录 A：发现并补齐图片作业范围</h2>
+<p>两份正式作业共 7 页均已渲染查看，发现并补齐原正文未充分展开的有耗线功率账、变换段内部波、截止段衰减、波导金属/介质损耗、微带宽度设计和带状线厚度依赖损耗。第三章第 46、47、49 页公式逐页视觉核对。7 道题均有独立解析；微带100 Ω宽度数值反代、截止段长度、条件化损耗和传输线两种算法检查通过。K-band尺寸表/黄铜σ/带状线t在题页缺失，给参数式及标明假设的示例，未伪造唯一数值。</p>
+<h2 id="section-15">全书终检（2026-11-24）</h2>
+<ul>
+<li>11 章正文、11 章解析、附录 A 与解析、目录、符号索引、考点映射和本记录均完整存在。统计 114 个例题、74 道练习/原作业题；四道综合题共 20 个分问。</li>
+<li>107 项数值检查通过。关键不变量包括开短路、匹配、λ/4与λ/2、支节周期正解、S矩阵全部交叉内积、功率守恒、截止枚举、滤波实际电路与理论响应及加载算法一致。</li>
+<li>对所有正式Markdown检查本地链接、图像和显式锚点，无断链；数值与结构结果在核验目录保存。生成过程中的临时Markdown已完成替换，没有将待编写占位页作为教材。</li>
+<li>1,294 个数学表达式通过 KaTeX 0.16.11 解析；全28份正式Markdown经Pandoc/MathML转换无数学警告。修正旧式 <code>rm</code> 语法以提高阅读器兼容性。</li>
+<li>浏览器抽查显示功率波公式、中文正文、Smith图网格及标记可读，图片成功加载。发现锚点后缺空行导致小节标题被当原文显示，已修正所有对应位置；随后核对28份Markdown的实际标题解析数量与源文件一致。</li>
+<li>Smith图已检查实虚轴、短开路端点、负载与两支节位置；与代数的旋转方向一致。课件波导截面及旧卷多栏图、公式按原图核对。其他示意以正文中的带标签字符图表达。</li>
+<li>后续浏览器句柄失效且截图保存路径受工具限制，因此未声称逐页逐端实测，也未保存不存在的截图。目视检查覆盖已成功显示的两段；公式整体另有两种解析验证。</li>
+<li>模型档位无正式可用设置/读取接口，CUA禁止访问Codex界面，无法验证本聊天实际型号和推理档位；未声称已切换。文件内保留用户要求GPT-6 Astra / High。</li>
+</ul>
+<h2 id="section-16">保留的限制与恢复办法</h2>
+<ol>
+<li>本届08–10章具体考查深度、SL解释、最终入场规则：等待教师正式后续资料后更新资料映射，不推断未公布信息。</li>
+<li>原作业缺省参数：按指定教材表格核对K-band a/b、黄铜σ，并确认带状线厚度t；只需更新附录A对应参数化算例。</li>
+<li>未运行HSPICE、HFSS、TXLine或实物测量；网表/几何值均按说明作为教学模型，不能称实物性能已验收。</li>
+<li>本地无Pozar第4版全文：以章节题名导航，不伪造印刷页码。原录播音频未回放，字幕引用保留定位与限制。</li>
+<li>Markdown阅读器应支持公式和本地SVG。自学教材完整交付不等于教师确认本届最终范围，也不等于学生已学会。</li>
+</ol>
+</article><footer class="page-footer">微波技术自学教材 · EST3303-02 · 唐旻<br>先跟随推导，再独立作答；练习解析按题号单独查阅。<a href="sources.html">查看资料依据</a></footer></main><aside class="toc" aria-label="本页目录"><p>本页目录</p><nav><a href="#section-2">来源检查</a><a href="#section-3">第 01 章</a><a href="#section-4">第 02 章</a><a href="#section-5">第 03 章</a><a href="#section-6">第 04 章</a><a href="#section-7">第 05 章</a><a href="#section-8">第 06 章</a><a href="#section-9">第 07 章</a><a href="#section-10">第 08 章</a><a href="#section-11">第 09 章</a><a href="#section-12">第 10 章</a><a href="#section-13">第 11 章</a><a href="#section-14">附录 A：发现并补齐图片作业范围</a><a href="#section-15">全书终检（2026-11-24）</a><a href="#section-16">保留的限制与恢复办法</a></nav><a class="back-top" href="#main">回到顶部 ↑</a></aside></div></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="search-heading"><h2 id="search-title">搜索全书</h2><button class="button" id="search-close" aria-label="关闭搜索">关闭 · Esc</button></div><label class="sr-only" for="search-input">输入关键词或题号</label><input id="search-input" type="search" autocomplete="off" placeholder="试试：反射系数、Smith、07-3"><p id="search-status" aria-live="polite">搜索正文、例题和独立解析。</p><div id="search-results"></div></dialog></body></html>

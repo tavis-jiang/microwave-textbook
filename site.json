@@ -1,11 +1,11 @@
 {
   "id": "microwave-textbook-reader",
-  "builtAt": "2026-11-27T10:03:47.799Z",
-  "pages": 44,
-  "formulas": 2819,
-  "images": 16,
+  "builtAt": "2026-11-28T04:45:37.697Z",
+  "pages": 45,
+  "formulas": 3061,
+  "images": 17,
   "questionAnchors": 196,
-  "resources": 17,
+  "resources": 18,
   "chapters": [
     {
       "slug": "01",
